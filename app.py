@@ -14,7 +14,7 @@ app=application
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', user=user)
+    return render_template('index.html')
 
 @app.route('/predictdata',methods=['GET','POST'])
 def predict_datapoint():
